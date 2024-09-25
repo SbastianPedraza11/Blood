@@ -1,0 +1,76 @@
+.carousel-item img {
+  height: 800px; /* Ajusta esta altura según lo que necesites */
+  object-fit: cover; /* Esto garantiza que la imagen se escale correctamente */
+}
+
+.collection img {
+  height: 500px; 
+  object-fit: cover; 
+}
+
+.clothes img {
+height: 620px;
+object-fit: cover;
+}
+
+.textos {
+font-size: 80px;
+}
+
+.Categorias img {
+height: 550px;
+object-fit: cover;
+}
+
+/* Estilos para dividir la imagen en 5 secciones */
+.carousel-item-confi {
+height: 250px; /* Ajusta la altura como prefieras */
+background-image: url('images/confiabilidad-banner-05-27-2024-lg.webp'); /* Ruta de la imagen */
+background-size: 510% 85%; /* Imagen más grande horizontalmente para dividirla en partes */
+background-repeat: no-repeat
+}
+
+/* Primera sección de la imagen */
+.carousel-item-1 {
+background-position: 0% 0; /* Mostrar la primera parte */
+}
+
+/* Segunda sección de la imagen */
+.carousel-item-2 {
+background-position: 25% 0; /* Mostrar la segunda parte */
+}
+
+/* Tercera sección de la imagen */
+.carousel-item-3 {
+background-position: 50% 0; /* Mostrar la tercera parte */
+}
+
+/* Cuarta sección de la imagen */
+.carousel-item-4 {
+background-position: 75% 0; /* Mostrar la cuarta parte */
+}
+
+/* Quinta sección de la imagen */
+.carousel-item-5 {
+background-position: 100% 0; /* Mostrar la quinta parte */
+}
+
+/* Estilos para alinear los iconos horizontalmente */
+.social-icons {
+display: flex;
+justify-content: center; /* Centrar los iconos horizontalmente */
+gap: 20px; /* Espacio entre iconos */
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icons a {
+font-size: 24px; /* Tamaño de los iconos */
+color: #000; /* Cambia el color aqui */
+transition: color 0.3s;
+}
+
+/* Cambiar el color al pasar el mouse sobre el icono */
+.social-icons a:hover {
+color: #007bff; /* Puedes personalizar este color */
+}
+
