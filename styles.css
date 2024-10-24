@@ -1,76 +1,95 @@
 .carousel-item img {
-  height: 800px; /* Ajusta esta altura según lo que necesites */
-  object-fit: cover; /* Esto garantiza que la imagen se escale correctamente */
+    height: auto;
+    max-height: 800px; /* Ajusta la altura máxima de las imágenes en dispositivos grandes */
+  }
+  .post img{
+    height: 450px;
+  }
+  
+  @media (max-width: 1199px) {
+    .carousel-item img {
+        width: 100%;
+        height: 300px; /* Ajusta la altura de las imagenes en tablets*/
+        max-height: 400px; /* Ajusta la altura máxima de las imágenes en resolucion tablets */
+      }  
+      .carousel-caption p {
+        font-size: 30px;
+      }
+      .clothes img {
+        height: 350px;
+      }
+      .categorias img {
+        height: 350px;
+      }
+      .post img {
+        height: 250px;
+      }
+    }
+
+  @media (max-width: 767px) {
+    .carousel-item img {
+        height: 450px;
+        max-height: 800px; /* Ajusta la altura máxima de las imágenes en resolucion móviles */
+    }
+    .textos{
+      font-size: 50px;
+    }
+    .carousel-item .row > div {
+      display: none; /* Ocultar todas las imágenes en dispositivos móviles / CarouselNuevaColeccion*/
+    }
+    .carousel-item .row > div:first-child {
+      display: block; /* Mostrar solo la primera imagen / CarouselNuevaColeccion */
+    }
+    .carousel-caption p {
+      font-size: 50px;
+    }
+    .post img{
+      height: 250px;
+    }
+    .clothes img {
+      height: 600px;
+    }
+    .categorias img {
+      height: 550px;
+    }
+  }
+
+  /* En pantallas grandes (escritorio): mostrar las 3 imágenes en fila, sin deslizamiento / CarouselCatagorias */
+  @media (min-width: 768px) {
+  .carousel-inner.categorias {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre las imágenes */
+  }
+  .carousel-item.categorias {
+    display: block;
+    width: 100%; /* Asegura que las imágenes tomen su espacio */
+  }
+  .carousel-control-prev.prev,
+  .carousel-control-next.next {
+    display: none;
+    transition: none;
+  }
+  .textos{
+    font-size: 50px;
+  }
 }
 
-.collection img {
-  height: 500px; 
-  object-fit: cover; 
+/* En pantallas grandes (escritorio): mostrar las 3 imágenes en fila, sin deslizamiento / CarouselClothes */
+@media (min-width: 768px) {
+  .carousel-inner.clothes {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre las imágenes */
+  }
+  .carousel-item.clothes {
+    display: block;
+    width: 100%; /* Asegura que las imágenes tomen su espacio */
+  }
+  .carousel-control-prev.prev.prev,
+  .carousel-control-next.next {
+    display: none;
+    transition: none;
+  }
+  
 }
 
-.clothes img {
-height: 620px;
-object-fit: cover;
-}
-
-.textos {
-font-size: 50px;
-}
-
-.Categorias img {
-height: 550px;
-object-fit: cover;
-}
-
-/* Estilos para dividir la imagen en 5 secciones */
-.carousel-item-confi {
-height: 250px; /* Ajusta la altura como prefieras */
-background-image: url('images/confiabilidad-banner-05-27-2024-lg.webp'); /* Ruta de la imagen */
-background-size: 510% 85%; /* Imagen más grande horizontalmente para dividirla en partes */
-background-repeat: no-repeat
-}
-
-/* Primera sección de la imagen */
-.carousel-item-1 {
-background-position: 0% 0; /* Mostrar la primera parte */
-}
-
-/* Segunda sección de la imagen */
-.carousel-item-2 {
-background-position: 25% 0; /* Mostrar la segunda parte */
-}
-
-/* Tercera sección de la imagen */
-.carousel-item-3 {
-background-position: 50% 0; /* Mostrar la tercera parte */
-}
-
-/* Cuarta sección de la imagen */
-.carousel-item-4 {
-background-position: 75% 0; /* Mostrar la cuarta parte */
-}
-
-/* Quinta sección de la imagen */
-.carousel-item-5 {
-background-position: 100% 0; /* Mostrar la quinta parte */
-}
-
-/* Estilos para alinear los iconos horizontalmente */
-.social-icons {
-display: flex;
-justify-content: center; /* Centrar los iconos horizontalmente */
-gap: 20px; /* Espacio entre iconos */
-}
-
-/* Estilos para los iconos de redes sociales */
-.social-icons a {
-font-size: 24px; /* Tamaño de los iconos */
-color: #000; /* Cambia el color aqui */
-transition: color 0.3s;
-}
-
-/* Cambiar el color al pasar el mouse sobre el icono */
-.social-icons a:hover {
-color: #007bff; /* Puedes personalizar este color */
-}
 
