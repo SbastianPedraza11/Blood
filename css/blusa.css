@@ -1,0 +1,19 @@
+/* Estilos base para el contenedor */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas grandes */
+    gap: 15px; /* Espacio entre las imágenes */
+}
+
+/* Estilos para las imágenes dentro del grid */
+.grid-container img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho de la celda */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Media query para pantallas móviles */
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+    }
+}
