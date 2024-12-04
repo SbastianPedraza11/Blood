@@ -108,4 +108,16 @@
   }
 }
 
+/* -------Footer---------- */
+.social-icons a {
+  color: #000;
+  font-size: 1.5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: brown; /* Cambia al color principal de Bootstrap */
+  
+}
+
 
